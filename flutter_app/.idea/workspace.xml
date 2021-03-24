@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="98568d0a-6590-4c06-9ead-912c491c9780" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[d130715c]" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1q9DTPFlQUPqY2GvJ2dKRCoH0wr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="98568d0a-6590-4c06-9ead-912c491c9780" name="Default Changelist" comment="" />
+      <created>1616482919137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616482919137</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="398" y="64" key="CommitChangelistDialog2" timestamp="1616549638258">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state x="398" y="64" key="CommitChangelistDialog2/62.25.1730.1095@62.25.1730.1095" timestamp="1616549638257" />
+    <state width="1678" height="286" key="GridCell.Tab.0.bottom" timestamp="1616549292688">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state width="1180" height="155" key="GridCell.Tab.0.bottom/46.25.1234.695@46.25.1234.695" timestamp="1616483050656" />
+    <state width="1678" height="286" key="GridCell.Tab.0.bottom/62.25.1730.1095@62.25.1730.1095" timestamp="1616549292688" />
+    <state width="1678" height="286" key="GridCell.Tab.0.center" timestamp="1616549292688">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state width="1180" height="155" key="GridCell.Tab.0.center/46.25.1234.695@46.25.1234.695" timestamp="1616483050656" />
+    <state width="1678" height="286" key="GridCell.Tab.0.center/62.25.1730.1095@62.25.1730.1095" timestamp="1616549292688" />
+    <state width="1678" height="286" key="GridCell.Tab.0.left" timestamp="1616549292688">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state width="1180" height="155" key="GridCell.Tab.0.left/46.25.1234.695@46.25.1234.695" timestamp="1616483050655" />
+    <state width="1678" height="286" key="GridCell.Tab.0.left/62.25.1730.1095@62.25.1730.1095" timestamp="1616549292688" />
+    <state width="1678" height="286" key="GridCell.Tab.0.right" timestamp="1616549292688">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state width="1180" height="155" key="GridCell.Tab.0.right/46.25.1234.695@46.25.1234.695" timestamp="1616483050656" />
+    <state width="1678" height="286" key="GridCell.Tab.0.right/62.25.1730.1095@62.25.1730.1095" timestamp="1616549292688" />
+    <state x="593" y="210" key="RollbackChangesDialog" timestamp="1616549634960">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state x="593" y="210" key="RollbackChangesDialog/62.25.1730.1095@62.25.1730.1095" timestamp="1616549634960" />
+    <state x="427" y="246" key="Vcs.Push.Dialog.v2" timestamp="1616549665711">
+      <screen x="62" y="25" width="1730" height="1095" />
+    </state>
+    <state x="427" y="246" key="Vcs.Push.Dialog.v2/62.25.1730.1095@62.25.1730.1095" timestamp="1616549665711" />
+  </component>
+</project>
