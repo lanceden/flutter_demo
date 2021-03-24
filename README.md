@@ -1,3 +1,6 @@
+# Vue 建議上課程式碼及說明文件
+- https://github.com/lanceden/flutter_demo/tree/main/assets/VueDemo
+
 # Flutter 安裝(mac)
 
 1. 下載Flutter: https://flutter.dev/docs/get-started/install

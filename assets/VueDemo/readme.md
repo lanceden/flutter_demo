@@ -144,5 +144,5 @@
             listData: Array
         }
     };
-    
+
 ```
