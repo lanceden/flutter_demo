@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/Api/Api.dart';
 import 'package:flutter_app/Model/Banners.dart';
+import 'package:flutter_app/Model/News.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class Home extends StatefulWidget {
@@ -13,17 +14,28 @@ class _HomeState extends State<Home> {
   Banners banners;
   int bannersLength = 0;
 
-  void Test() {
+  News news;
+  int newsLength = 0;
+
+  void queryBanner() {
     Api.queryBanner().then((value) {
       banners = Banners.fromJson(value);
       bannersLength = banners.data.result.length;
     });
   }
 
+  void queryNews() {
+    Api.queryNews().then((value) {
+      news = News.fromJson(value);
+      newsLength = news.data.result.length;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
-    Test();
+    queryBanner();
+    queryNews();
   }
 
   @override
@@ -33,7 +45,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text('首頁'),
       ),
-      body: ListView.builder(
+      body: ListView.builder( // 讓首頁可以上下滾動
         itemBuilder: (context, index) {
           if (index == 0) {
             return Column(
@@ -80,14 +92,58 @@ class _HomeState extends State<Home> {
                   ],
                 ),
                 Divider(),
+                Container(
+                  color: Colors.black,
+                  child: Row(
+                    children: [
+                      SizedBox(width: 20,),
+                      Icon(Icons.fiber_new,
+                          color: Colors.yellow),
+                      SizedBox(width: 20,),
+                      Text('最新消息', style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white
+                      ),),
+                    ],
+                  ),
+                )
               ],
             );
           }
-          return Container(
-            child: Text('13'),
+          // 還有GestureDetector可參考
+          return InkWell(
+            // 最新消息列表
+            child: Column(
+              children: [
+                SizedBox(height: 20,),
+                Container(
+                    child: Row(
+                      children: [
+                        SizedBox(width: 20,),
+                        Icon(Icons.whatshot),
+                        Text('${news.data.result[index].newsFirstTitle}', style: TextStyle(fontSize: 18,),)
+                      ],
+                    )
+                ),
+                SizedBox(height: 20,),
+                Container(
+                    child: Row(
+                      children: [
+                        SizedBox(width: 20,),
+                        Text('${news.data.result[index].newsSecTitle}', style: TextStyle(fontSize: 18,),)
+                      ],
+                    )
+                ),
+                Divider(color: Colors.black,)
+              ],
+            ),
+            // 最新消息點擊事件
+            onTap: () {
+              print('list click');
+            },
           );
         },
-        itemCount: 3,
+        itemCount: newsLength,
       ),
     );
   }

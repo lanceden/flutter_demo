@@ -12,4 +12,12 @@ class Api {
       return response.data;
     }
   }
+  // 取回最新消息
+  static Future queryNews() async{
+    Response response;
+    response = await Dio().post('$newsUrl');
+    if(response.statusCode == HttpStatus.ok) {
+      return response.data;
+    }
+  }
 }
