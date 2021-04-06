@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'courseinfo/CourseInfo.dart';
+import 'home/Home.dart';
+import 'member/Member.dart'; // android 樣式
+
 void main() {
   runApp(MyApp());
 }
@@ -10,56 +14,52 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+          primarySwatch: Colors.yellow,
+          bottomAppBarColor: Colors.brown,
+          buttonTheme: ButtonThemeData(minWidth: double.infinity, height: 50)),
+      home: StartPage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
+class StartPage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _StartPageState createState() => _StartPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+class _StartPageState extends State<StartPage> {
+  int count = 0;
+  // navbar點擊的頁面
+  int pageIndex = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
+  final pages = [
+    Home(),
+    CourseInfo(),
+    Member()
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+      body: pages[pageIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: '首頁' ),
+          BottomNavigationBarItem(icon: Icon(Icons.list), label: '最新消息' ),
+          BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: '會員中心' ),
+        ],
+        backgroundColor: Colors.grey[800],
+        unselectedItemColor: Colors.white,
+        fixedColor: Colors.amber, //選擇頁顏色
+        currentIndex: pageIndex,
+        onTap: (index) {
+          setState(() {
+            pageIndex = index;
+          });
+        },
       ),
     );
   }
 }
+
+
