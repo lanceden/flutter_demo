@@ -19,5 +19,3 @@
 
 * https://github.com/lanceden/flutter_demo/blob/main/FlutterInstall.md
 
-
-# Flutter 專案檢視：
