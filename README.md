@@ -19,3 +19,16 @@
 
 * https://github.com/lanceden/flutter_demo/blob/main/FlutterInstall.md
 
+
+# Flutter -Day 1
+
+- 了解如何寫出建置專案的計數器
+- 語法快捷鍵
+```
+stless - 產生無狀態的widgt
+
+stful - 產生有狀態的widget
+```
+
+-無狀態 widget
+# StatelessWidget在App初始化之後就不能改變，它是immutable。如果想要改變就得new一個新的StatelessWidget去做更換。
