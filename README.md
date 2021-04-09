@@ -2,6 +2,18 @@
   - [Flutter安裝(mac)](#Flutter安裝(mac))
   - [Flutter安裝常見錯誤](#Flutter安裝常見錯誤)
   - [FlutterDay1](#FlutterDay1)
+    - [無狀態widget](#無狀態widget)
+    - [有狀態widget](#有狀態widget)
+    - [使用套件](#使用套件)
+    - [Flutter頁面佈局](#Flutter頁面佈局)
+      - [Text](#Text)
+      - [Column](#Column)
+      - [Row](#Row)
+      - [Center](#Center)
+      - [SizedBox](#SizedBox)
+      - [ListView](#ListView)
+      - [InkWell](#InkWell)
+      - [MediaQuery](#MediaQuery)
 
 # Vue上課程式碼及說明文件
 - https://github.com/lanceden/flutter_demo/tree/main/assets/VueDemo
@@ -38,10 +50,10 @@ stful - 產生有狀態的widget
 
 ---
 
-### 無狀態 widget
+### 無狀態widget
 * StatelessWidget在App初始化之後就不能改變，它是immutable。如果想要改變就得new一個新的StatelessWidget去做更換。
 
-### 有狀態 widget
+### 有狀態widget
 *   StatefulWidget可以在App內無限次的被重繪集及更新狀態，它是mutable，需要重繪時可以調用setState()，
     去標記自己為dirty狀態，為下次更新做準備。
 
@@ -106,8 +118,9 @@ Swiper(
 
 
 ### Flutter頁面佈局
-- Text - 顯示文字
 
+#### Text
+- 顯示文字
 - TextStyle - 文字大小、顏色調整
 
 ```
@@ -120,7 +133,8 @@ Text(
 )
 ```
 
-- Column - 將容器中的多個Widget垂直排列(由上往下)
+#### Column
+- 將容器中的多個Widget垂直排列(由上往下)
 
 ```
 Column(
@@ -136,7 +150,8 @@ Column(
 )
 ```
 
-- Row - 將容器中的多個Widget水平排列(由左往右)
+#### Row 
+- 將容器中的多個Widget水平排列(由左往右)
 
 ```
 Row(
@@ -151,7 +166,8 @@ Row(
 )
 ```
 
-- Center - 將容器中的單一Widget垂直置中
+#### Center 
+- 將容器中的單一Widget垂直置中
 
 ```
 Center(
@@ -170,7 +186,8 @@ Container(
 )
 ```
 
-- SizedBox - 一個具有指定寬高的Box。
+#### SizedBox 
+- 一個具有指定寬高的Box。
 
 ```
 SizedBox(
@@ -178,7 +195,8 @@ SizedBox(
 )
 ```
 
-- ListView - ListView是最常被使用的滾動組件，可以沿著一個方向排列所有children。
+#### ListView 
+- ListView是最常被使用的滾動組件，可以沿著一個方向排列所有children。
 ```
 ListView.builder(
   shrinkWrap: true,
@@ -186,8 +204,10 @@ ListView.builder(
 )
 ```
 
-- InkWell(GestureDetector) - 當需要給一個元素點擊事件的時候可使用
-- GestureDetector用法與InkWell類似，不過GestureDetector有更多處理手勢的方法
+#### InkWell
+- 當需要給一個元素點擊事件的時候可使用
+#### GestureDetector
+- 用法與InkWell類似，不過GestureDetector有更多處理手勢的方法
 
 ```
 InkWell(
@@ -202,7 +222,8 @@ InkWell(
 
 ```
 
-- MediaQuery - 取回當前裝置大小資訊
+#### MediaQuery 
+- 取回當前裝置大小資訊
 ```
 // 取回當前裝置大小資訊
 var mediaQueryData = MediaQuery.of(context);
