@@ -1,13 +1,13 @@
-  - [Vue 上課程式碼及說明文件本](#Vue上課程式碼及說明文件)
-  - [Flutter 安裝(mac)](#Flutter安裝(mac))
+  - [Vue上課程式碼及說明文件本](#Vue上課程式碼及說明文件)
+  - [Flutter安裝(mac)](#Flutter安裝(mac))
   - [Flutter安裝常見錯誤](#Flutter安裝常見錯誤)
   - [Flutter_Day1](#FlutterDay1)
 
-# Vue 上課程式碼及說明文件
+# Vue上課程式碼及說明文件
 - https://github.com/lanceden/flutter_demo/tree/main/assets/VueDemo
 - https://github.com/lanceden/vuecli-demo
 
-# Flutter 安裝(mac)
+# Flutter安裝(mac)
 
 1. 下載Flutter: https://flutter.dev/docs/get-started/install
 2. 解壓縮到:/Library
