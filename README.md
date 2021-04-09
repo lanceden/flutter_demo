@@ -1,7 +1,7 @@
   - [Vue上課程式碼及說明文件本](#Vue上課程式碼及說明文件)
   - [Flutter安裝(mac)](#Flutter安裝(mac))
   - [Flutter安裝常見錯誤](#Flutter安裝常見錯誤)
-  - [Flutter_Day1](#FlutterDay1)
+  - [FlutterDay1](#FlutterDay1)
 
 # Vue上課程式碼及說明文件
 - https://github.com/lanceden/flutter_demo/tree/main/assets/VueDemo
@@ -25,7 +25,7 @@
 * https://github.com/lanceden/flutter_demo/blob/main/FlutterInstall.md
 
 
-# Flutter_Day1
+# FlutterDay1
 
 - 了解如何寫出建置專案的計數器
 - 語法快捷鍵
