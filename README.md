@@ -14,7 +14,7 @@
       - [ListView](#ListView)
       - [InkWell](#InkWell)
       - [MediaQuery](#MediaQuery)
-  - [json-to-dart](#Json_to_Dart)
+  - [JsonToDart](#JsonToDart)
 
 # Vue上課程式碼及說明文件
 - https://github.com/lanceden/flutter_demo/tree/main/assets/VueDemo
@@ -236,7 +236,7 @@ final double heightScreen = mediaQueryData.size.height;
 
 ---
 
-### Json to Dart
+### JsonToDart
 - 使用線上轉換，網址：https://app.quicktype.io/
 
 ---
