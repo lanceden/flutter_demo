@@ -45,7 +45,7 @@ class _StartPageState extends State<StartPage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: '首頁' ),
-          BottomNavigationBarItem(icon: Icon(Icons.list), label: '最新消息' ),
+          BottomNavigationBarItem(icon: Icon(Icons.list), label: '課程' ),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: '會員中心' ),
         ],
         backgroundColor: Colors.grey[800],
