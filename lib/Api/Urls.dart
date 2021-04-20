@@ -11,6 +11,14 @@ class Url {
 // 教練資訊
   static String get coachUrl => '$baseUrl/JasperCoach/query';
 
-// 登入123
+// 登入
+  /* post資料：
+  {
+    "authcode": "@#ALLEC#@%$!",
+    "centercode": "jx01",
+    "memtel": "0928075503",
+    "pw": "123456789"
+  }
+  */
   static String get loginUrl => 'http://sp7.allec.com.tw/apisk/login2';
 }
