@@ -1,13 +1,16 @@
-// Api網址
-const String BaseUrl = 'https://jxjasper.com/JasperFitness';
+class Url {
+  // Api網址
+  static String baseUrl = 'https://jxjasper.com/JasperFitness';
 
 // 取回預覽圖
-const String bannerUrl = '$BaseUrl/Banner/Preview';
+  static String get bannerUrl => '$baseUrl/Banner/Preview';
 
 // 取回最新消息
-const String newsUrl = '$BaseUrl/JasperNews/Index';
+  static String get newsUrl => '$baseUrl/JasperNews/Index';
 
 // 教練資訊
-const String coachUrl = '$BaseUrl/JasperCoach/query';
+  static String get coachUrl => '$baseUrl/JasperCoach/query';
 
-// https://jxjasper.com/JasperFitness/JasperCoach/query
+// 登入
+  static String get loginUrl => 'http://sp7.allec.com.tw/apisk/login2';
+}
